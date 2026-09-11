@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045
+        );
+}
+
+.container {
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+
+    padding: 40px 35px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-family: cursive;
+    font-size: 42px;
+
+    margin-bottom: 8px;
+
+    background:
+        linear-gradient(
+            45deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: #fafafa;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #833ab4;
+
+    background: white;
+}
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045
+        );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.divider {
+    margin: 22px 0;
+
+    display: flex;
+    align-items: center;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #ddd;
+}
+
+.divider span {
+    margin: 0 12px;
+}
+
+.forgot {
+    text-decoration: none;
+
+    color: #833ab4;
+
+    font-size: 13px;
+}
+
+.error {
+    color: red;
+
+    font-size: 13px;
+
+    margin-top: 12px;
+}
+
+.signup-card {
+    background: white;
+
+    margin-top: 15px;
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.12);
+}
+
+.signup-card a {
+    color: #833ab4;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: white;
+
+    font-size: 12px;
+}
+
+@media (max-width: 450px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .login-card {
+        padding: 35px 25px;
+    }
+
+    .logo {
+        font-size: 36px;
+    }
+}
